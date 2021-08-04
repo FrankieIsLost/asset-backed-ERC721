@@ -11,7 +11,7 @@ import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
  * @dev ERC721 Token backed by an ERC20 token. ERC20 needs to be transfered on mint, and is redemeed
  * when token is burned. This gives this token a "hard floor". 
  */
-abstract contract ERC721Backed is ERC721 {
+abstract contract ERC721AssetBacked is ERC721 {
     
     //asset used to back token
     address public immutable asset;
